@@ -20,14 +20,14 @@ public class Radio {
 
     public void next() {
         if (currentStation == 9) {
-            this.currentStation = 0;
+            this.currentStation = 0; return;
         }
-        setCurrentVolume(currentStation + 1);
+        setCurrentStation(currentStation + 1);
     }
 
     public void prev() {
         if (currentStation == 0) {
-            this.currentStation = 9;
+            this.currentStation = 9; return;
         }
         setCurrentStation(currentStation - 1);
     }
